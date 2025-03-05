@@ -7,8 +7,9 @@
 </head>
 
     <body>
-    
-        <form method="post">
+        <script defer src="script.js"></script>
+
+        <form method="post" id="formulario">
             <label for="nome2">Nome:</label>
             <input type="text" name="nome" id="nome2" placeholder="Insira o seu nome!" required>
 
@@ -44,11 +45,11 @@
             <input type="checkbox" name="privado" value="privado"> Privado
             <br>
 
-            <!-- FORMA 1: -->
+            <!-- FORMA 1: 
             <button name="cadastro">Cadastrar</button>
-            <br>
+            <br>  -->
             <!-- FORMA 2: -->
-            <button type="submit">Enviar o seu cadastro</button>
+            <button type="submit" name="button" value="Cadastrar" id="botao" >
 
         </form>
 
