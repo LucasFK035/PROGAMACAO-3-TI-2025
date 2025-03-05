@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+    <body>
+    
+        <form method="post">
+            <label for="nome2">Nome:</label>
+            <input type="text" name="nome" id="nome2" placeholder="Insira o seu nome!" required>
+
+            <br>
+            <label for="idade2">Idade:</label>
+            <input type="number" name="idade" id="idade2" min="0" max="100" required>
+            <br>
+
+            <label for="data2">Data de nascimento:</label>
+            <input type="date" name="data" id="data2" id="Insira sua data de nascimento!" required>
+            <br>
+
+            <label for="email2">E-mail:</label>
+            <input type="text" name="email" id="email2" id="email" required>
+            <br>
+
+            <label for="curso" required>Escolha o sue curso:</label>
+            <select id="curso" name="curso">
+                <option selected disabled>Selecione o curso</option>
+                <option value="info">Informática</option>
+                <option value="quim">Química</option>
+                <option value="ambien">Meio-Ambiente</option>
+                <option value="adm">Administração</option>
+            </select>
+            <br>
+            <label>Informe o turno do seu curso:</label>
+            <input type="radio" name="turno" value="manha"> Manhã
+            <input type="radio" name="turno" value="tarde"> Tarde
+
+            <br>
+            <label>Como você vem para a escola:</label>
+            <input type="checkbox" name="publico" value="publico"> Público
+            <input type="checkbox" name="privado" value="privado"> Privado
+            <br>
+
+            <!-- FORMA 1: -->
+            <button name="cadastro">Cadastrar</button>
+            <br>
+            <!-- FORMA 2: -->
+            <button type="submit">Enviar o seu cadastro</button>
+
+        </form>
+
+    </body>
+</html>
