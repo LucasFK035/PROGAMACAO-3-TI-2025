@@ -27,10 +27,14 @@ formulario.addEventListener("submit", function(event){
     const formData = new FormData(this);
     let dados =Object.fromEntries(formData.entries());
    // console.log(`${dados['nome']} tem ${dados['idade']} anos.`);
+
+   let texto = document.getElementById("texto");
+
+   //texto.textContent = ``
 })
 
 let texto = document.getElementById("texto");
-if(formData.has("publico") && formData.has("privado")){
+if(formData.has("publico")) && formData.has(("privado")){
     texto.textContent = `${dados['nome']} vem das duas formas.`;
 } else if (formData.has("publico")) {
     texto.textContent = `${dados['nome']} vem de transporte público.`;
