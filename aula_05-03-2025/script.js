@@ -20,3 +20,9 @@ formulario.addEventListener("submit", function(event){
     event.preventDefault();
     alert("Você submeteu o formulário!");
 })
+
+const formulario1 = document.getElementById("formulario");
+formulario.addEventListener("submit", function(event){
+    event.preventDefault();
+    const formData = new FormData(this);
+})
