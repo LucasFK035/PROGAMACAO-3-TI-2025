@@ -6,23 +6,6 @@
     font-size: 14pt;
 }
 
-.container{
-    background-color: cornflowerblue;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    place-items: center;
-}
-
-.box{
-    width: 200px;
-    height: 200vh;
-    width: 200vw;
-    display: ;
-    place-items: ;
-
-}
-
 html,body{
     height: 100%;
     width: 100%;
