@@ -26,7 +26,7 @@
             <input type="text" name="email" id="email2" id="email" required>
             <br>
 
-            <label for="curso" required>Escolha o sue curso:</label>
+            <label for="curso" required>Escolha o seu curso:</label>
             <select id="curso" name="curso">
                 <option selected disabled>Selecione o curso</option>
                 <option value="info">Informática</option>
@@ -35,21 +35,21 @@
                 <option value="adm">Administração</option>
             </select>
             <br>
-            <label>Informe o turno do seu curso:</label>
-            <input type="radio" name="turno" value="manha"> Manhã
-            <input type="radio" name="turno" value="tarde"> Tarde
+            <fieldset>
 
+                <legend>Informe o turno do seu curso:</legend>
+                <input type="radio" name="turno" value="manha"> Manhã
+                <input type="radio" name="turno" value="tarde"> Tarde
+            </fieldset>
             <br>
-            <label>Como você vem para a escola:</label>
-            <input type="checkbox" name="publico" value="publico"> Público
-            <input type="checkbox" name="privado" value="privado"> Privado
+            <fieldset>
+                <legend>Como você vem para a escola:</legend>
+                <input type="checkbox" name="publico" value="publico"> Público
+                <input type="checkbox" name="privado" value="privado"> Privado
+            </fieldset>
+            
             <br>
-
-            <!-- FORMA 1: 
-            <button name="cadastro">Cadastrar</button>
-            <br>  -->
-            <!-- FORMA 2: -->
-            <button type="submit" name="button" value="Cadastrar" id="botao" >
+            <input type="submit" name="button" value="Cadastrar" id="botao" >
 
         </form>
 
