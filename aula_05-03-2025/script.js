@@ -25,4 +25,6 @@ const formulario1 = document.getElementById("formulario");
 formulario.addEventListener("submit", function(event){
     event.preventDefault();
     const formData = new FormData(this);
+    let dados =Object.fromEntries(formData.entries());
+    console.log(dados);
 })
