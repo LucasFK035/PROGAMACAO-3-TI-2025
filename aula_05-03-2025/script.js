@@ -26,5 +26,16 @@ formulario.addEventListener("submit", function(event){
     event.preventDefault();
     const formData = new FormData(this);
     let dados =Object.fromEntries(formData.entries());
-    console.log(dados);
+   // console.log(`${dados['nome']} tem ${dados['idade']} anos.`);
 })
+
+let texto = document.getElementById("texto");
+if(formData.has("publico") && formData.has("privado")){
+    texto.textContent = `${dados['nome']} vem das duas formas.`;
+} else if (formData.has("publico")) {
+    texto.textContent = `${dados['nome']} vem de transporte público.`;
+} else if(formData.has("privado")){
+    texto.textContent = `${dados['nome']} vem de transporte própio.`;
+} else {
+    texto.textContent = `${dados['nome']} não vem com nenhum transporte.`;
+}
