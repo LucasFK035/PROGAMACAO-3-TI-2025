@@ -10,8 +10,8 @@ console.log(mensagem); */
 let hoje = new Date();
 console.log(hoje); */
 
-const botao = document.getElementById("botao");
-botao.style.backgroundColor = "green";
+//const botao = document.getElementById("botao");
+// botao.style.backgroundColor = "blue";
 /*const nome = document.getElementById("nome");
 nome.value = "Lucas";*/
 
