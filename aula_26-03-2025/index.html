@@ -7,17 +7,48 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 
-    <form id="formulario_panqueca">
 </head>
 <body>
-    <div>
-
+    <form id="formulario_panqueca"></form>
+    <div class="grupo">
+        <h1>PREÇO DO PEDIDO</h1>
+    </div>
+    <div class="grupo">
+        <fieldset>
+        <h2>Tamanho da panqueca:</h2>
+        <label><input type="radio" name="tamanho" value="Pequeno">P</label>
+        <label><input type="radio" name="tamanho" value="Médio">M</label>
+        <label><input type="radio" name="tamanho" value="Grande">G</label>
+        </fieldset>
     </div>
 
+    <div class="grupo">
+        <fieldset>
+            <h2>Sabor da panqueca:<h2>
+            <label type="checkbox" name="queijo">Queijo</label>
+            <label type="checkbox" name="calabresa">Calabresa</label>
+            <label type="checkbox" name="morango">Morango</label>
+        </fieldset>
+    </div>
 
+    <div class="grupo">
+        <h2>Entrega ou busca?<h2>
+        <select name="entrega_busca" id="entrega_busca_p">
+            <option value="ent">Entrega</option>    
+            <option value="bus">Busca</option>
+        </select>
+    </div>
 
+    <div class="grupo_quant">
+        <label for="quant">Quantidade:</label>
+        <input type="number" name="quant_p" min="1" max="1000" required>
+    </div>
 
-    
+    <div class="grupo_calc_valor">
+        <input type="submit" value="Calcular" name="Calcular">
+        <label for="valor">R$ valor total</label>
+    </div>
+
     </form>
 </body>
 </html>
