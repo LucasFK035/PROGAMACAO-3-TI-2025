@@ -14,7 +14,6 @@ html, body{
 form{
     width: 50px;
     margin: auto;
-
 }
 
 .grupo{
@@ -22,13 +21,13 @@ form{
     padding: 5px;
 }
 
-.centralizar{
+.centraliza{
     text-align: center;
 }
 
 input[type='submit']{
     padding: 5px;
-    background-color: white;
+    background-color: beige;
 }
 
 input[type='checkbox'], input[type='radio']{
