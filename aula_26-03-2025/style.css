@@ -11,18 +11,33 @@ html, body{
     width: 100%;
 }
 
+section{
+    height: 50vh;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 form{
-    width: 50px;
-    margin: auto;
+    width: 30px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    border: 3px black;
 }
 
 .grupo{
     margin: 5px;
-    padding: 5px;
+    display: flex;
 }
 
-.centraliza{
-    text-align: center;
+label{
+    flex: 1;
+}
+
+.campo{
+    flex: 2;
 }
 
 input[type='submit']{
