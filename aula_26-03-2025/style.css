@@ -1,0 +1,40 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+form{
+    width: 50px;
+    margin: auto;
+
+}
+
+.grupo{
+    margin: 2px;
+    padding: 2px;
+}
+
+.centralizar{
+    text-align: center;
+}
+
+input[type='submit']{
+    padding: 5px;
+    background-color: white;
+}
+
+input[type='checkbox'], input[type='radio']{
+    margin: 5px;
+}
+
+fieldset{
+    padding: 5px;
+}
