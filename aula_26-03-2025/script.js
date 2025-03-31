@@ -1,7 +1,7 @@
 console.log("PREÇO DO PEDIDO:")
 
 /* Tamanho */
-let quantidade = 0;
+quantidade = 0;
 if quantidade == pequeno{
     let pequeno = 10;
 
