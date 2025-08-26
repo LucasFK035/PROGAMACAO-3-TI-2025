@@ -1,0 +1,9 @@
+{
+    "name": "lucas.kunrath/trabalho-prog-lucasfk-e-rafael",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require": {}
+}
