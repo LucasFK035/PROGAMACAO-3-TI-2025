@@ -11,7 +11,7 @@ body {
 
 .header {
     background-color: white;
-    padding: 1em;
+    padding: 0.5em;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -43,46 +43,52 @@ body {
 .main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1em;
+    gap: 1em;
     padding: 1em;
 }
 
 .perfil {
     display: grid;
-    grid-template-columns: 1fr;
+    flex-direction: column;
     align-items: center;
-    padding: 1em;
+    justify-content: center;
+    padding: 0.5em;
     background-color: white;
     border: 1px solid beige;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px rgba(1, 1, 1, 1);
 }
 
-.foto-perfil {
-    text-align: center;
+.foto-perfil img {
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 100%;
 }
 
 .bio {
-    padding: 0.5em;
+    text-align: center;
 }
 
 .fotos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 0.5em;
+    gap: 0.5em;
 }
 
 .grid-fotos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.5em;
+    gap: 0.5em;
 }
 
 .grid-fotos img {
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .footer {
