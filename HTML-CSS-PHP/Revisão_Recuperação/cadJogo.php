@@ -6,7 +6,7 @@
     <title>Biblioteca de Jogos</title>
 </head>
 <body>
-    <form action="index.php" method="post">
+    <form action="cadJogo.php" method="post">
     <p>Título:</p>
     <label>
         <input type="text" name="titulo" id="titulo" required>
@@ -15,20 +15,20 @@
     <p>Gênero:</p>
     <label>
     <select name="genero" id="genero" required>
-        <option value="acao">Ação</option>
-        <option value="aventura">Aventura</option>
-        <option value="rpg">RPG</option>
-        <option value="estrategia">Estratégia</option>
-        <option value="fps">FPS</option>
-        <option value="roguelike">RogueLike</option>
-        <option value="terror">Terror</option>
-        <option value="esporte">Esporte</option>
+        <option value="1">Ação</option>
+        <option value="1">Aventura</option>
+        <option value="3">RPG</option>
+        <option value="4">Estratégia</option>
+        <option value="5">FPS</option>
+        <option value="6">RogueLike</option>
+        <option value="7">Terror</option>
+        <option value="8">Esporte</option>
     </select>
     </label>
     <p>Plataforma:</p>
     <label>
-        <input type="checkbox" name="plataforma" id="p1" value="Computador" required>
-        <input type="checkbox" name="plataforma" id="p2" value="Videogame" required>
+        <input type="checkbox" name="plataforma[]" id="p1" value="Computador" required>
+        <input type="checkbox" name="plataforma[]" id="p2" value="Videogame" required>
     </label>
     <p>Situação:</p>
     <label>
@@ -36,15 +36,10 @@
         <input type="radio" name="situacao" id="s2" value="Indisponível" required>
     </label>
     <p>Imagem da Capa:</p>
-    <label>
-        <input type="button" name="botaoArquivo" id="file" value="Selecione o arquivo">
+        <input type="file" name="accept" id="file" accept="image/*" value="Selecione o arquivo">
+        <br>
         <input type="button" name="botaoEnviar" value="Submeter">
-    </label>
-   
+
     </form>
 </body>
 </html>
-
-<?php
-
-?>
